@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8e8f0">
+  <meta name="description" content="Ta beauté, c’est toi : des mots doux, une communauté bienveillante et un espace qui célèbre chaque personne, avec ou sans handicap.">
+  <meta property="og:title" content="Ta beauté, c’est toi">
+  <meta property="og:description" content="Un espace de bienveillance, d’inclusion et de mots doux.">
+  <title>Ta beauté, c’est toi ♡</title>
+  <style>
+    :root{--pink:#f6dce8;--pink2:#eeb9d1;--lav:#dcd3f2;--lav2:#a995d5;--cream:#fffaf1;--ink:#49384d;--muted:#786a7b;--white:#fff;--shadow:0 14px 38px #6b4d6b18}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:85px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,sans-serif;line-height:1.6}
+    a{color:inherit} img{max-width:100%;display:block}
+    .topbar{position:sticky;top:0;z-index:10;background:#fffaf1ed;backdrop-filter:blur(12px);border-bottom:1px solid #eadde9}
+    .nav{max-width:1160px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:850;font-size:1.12rem;text-decoration:none;letter-spacing:-.03em;white-space:nowrap}.brand span{color:#c26e9d}
+    .navlinks{display:flex;gap:17px;align-items:center;flex-wrap:wrap;justify-content:center}.navlinks a{text-decoration:none;font-size:.88rem;color:#6f5c76}.navlinks a:hover{text-decoration:underline}
+    .navright{display:flex;gap:9px;align-items:center}.lang{border:1px solid #d8c8e8;background:white;border-radius:999px;padding:8px 10px;color:var(--ink);font:inherit}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;background:#bd6f9a;color:white;text-decoration:none;padding:12px 19px;font-weight:750;box-shadow:0 7px 18px #bd6f9a30;transition:transform .18s,box-shadow .18s;cursor:pointer}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px #bd6f9a40}.btn.secondary{background:#8872b7}.btn.soft{background:#fff;color:#8e5b83;border:1px solid #ecd6e4;box-shadow:none}
+    .hero{overflow:hidden;position:relative;background:radial-gradient(circle at 15% 15%,#fff 0,transparent 28%),linear-gradient(130deg,#f9e5ee,#e7def7 68%,#fff8ee)}
+    .hero-inner{max-width:1160px;margin:auto;padding:64px 22px 72px;display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}
+    .eyebrow{display:inline-block;background:#fff9;border:1px solid #fff;padding:7px 13px;border-radius:999px;font-size:.83rem;font-weight:700;color:#8b668b}
+    h1{font-size:clamp(2.45rem,5vw,4.5rem);line-height:1.05;letter-spacing:-.055em;margin:18px 0;color:#594365}
+    .hero p{font-size:1.08rem;max-width:550px;color:#6d5b75}
+    .slogan{font-family:Georgia,serif;font-size:clamp(1.3rem,2.5vw,1.8rem)!important;line-height:1.45;color:#80557e!important;border-left:4px solid #c681ad;padding-left:18px;margin:24px 0}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .hero-art{min-height:410px;position:relative;display:grid;place-items:center}
+    .halo{position:absolute;width:min(90%,400px);aspect-ratio:1;border-radius:50%;background:#fff7;border:1px solid #fff;box-shadow:0 0 0 20px #ffffff22,0 0 0 42px #ffffff18}
+    .mirror{position:relative;width:min(76%,315px);aspect-ratio: .78;border-radius:48% 48% 44% 44%;border:10px solid #d3b7d5;background:linear-gradient(145deg,#fdfcff,#dfd1ef 52%,#f8dce8);box-shadow:inset 0 0 0 5px #fff8,0 18px 35px #7d5b8c2b;display:flex;align-items:center;justify-content:center;text-align:center;padding:26px}
+    .mirror:before{content:"";position:absolute;inset:12px;border:1px solid #fff;border-radius:48% 48% 44% 44%}
+    .mirror-heart{font-size:4.2rem;filter:drop-shadow(0 4px 5px #c16f9a55);z-index:1}
+    .mirror-label{position:absolute;bottom:28px;font-family:Georgia,serif;font-style:italic;font-size:1.05rem;color:#775c8c;z-index:1}
+    .person{position:absolute;width:90px;height:90px;border:5px solid #fff;border-radius:50%;box-shadow:var(--shadow);display:grid;place-items:center;font-size:2.3rem;background:#fff}
+    .p1{top:18px;left:12%}.p2{top:58px;right:8%;background:#f7e0d1}.p3{bottom:45px;left:3%;background:#e1d9f5}.p4{bottom:15px;right:12%;background:#f6dce8}.p5{top:45%;right:0;background:#e1eeda}.p6{top:43%;left:0;background:#fff1cb}
+    section{padding:70px 22px}.container{max-width:1100px;margin:auto}.section-head{text-align:center;max-width:710px;margin:0 auto 32px}.kicker{text-transform:uppercase;letter-spacing:.13em;font-size:.76rem;font-weight:850;color:#ad6e9b}.section-head h2{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;letter-spacing:-.04em;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}
+    .quote-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .quote{background:white;border:1px solid #f0e3ed;border-radius:19px;padding:20px;box-shadow:var(--shadow);min-height:160px;display:flex;flex-direction:column;justify-content:space-between}
+    .quote .num{font-size:.78rem;color:#ad77a2;font-weight:850}.quote p{margin:10px 0;font-family:Georgia,serif;font-size:1.04rem;line-height:1.45}.quote .spark{align-self:flex-end;color:#c17ba5}
+    .more-section{background:linear-gradient(180deg,#f9edf3,#f4f0fb)}
+    .stories{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+    .story{display:grid;grid-template-columns:145px 1fr;gap:18px;align-items:center;background:#fff;border:1px solid #eee2ef;border-radius:22px;padding:14px;box-shadow:var(--shadow)}
+    .story img{height:190px;width:100%;object-fit:cover;border-radius:15px;background:#e8dff2}
+    .story h3{margin:0 0 7px;font-size:1.13rem}.story p{margin:0;color:#75667a;font-size:.95rem}
+    .community{background:linear-gradient(125deg,#dcd3f2,#f7dce9);text-align:center}.community-card{max-width:790px;margin:auto;background:#fff9;border:1px solid #fff;border-radius:28px;padding:clamp(25px,5vw,48px);box-shadow:var(--shadow)}
+    .community-card .bigheart{font-size:3rem}.community-card h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:8px 0 14px}.community-card p{max-width:600px;margin:0 auto 24px;color:#6e5b76}
+    .values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.value{background:white;border:1px solid #f0e3ed;border-radius:20px;padding:25px;text-align:center;box-shadow:var(--shadow)}.value .ico{font-size:2rem}.value h3{margin:9px 0 6px}.value p{margin:0;color:var(--muted);font-size:.94rem}
+    .about{background:#fffaf5}.footer{background:#584263;color:#fff1fb;padding:35px 22px}.footer-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer p{margin:5px 0;color:#e6d7ec;font-size:.9rem}.footer a{color:white}.tiny{font-size:.82rem;color:#8c7891}
+    .notice{max-width:1100px;margin:18px auto 0;padding:0 22px;color:#8b6a82;font-size:.83rem}
+    @media(max-width:900px){.navlinks{display:none}.hero-inner{grid-template-columns:1fr;text-align:center;padding-top:48px}.hero p{margin-left:auto;margin-right:auto}.slogan{text-align:left;max-width:650px;margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.hero-art{min-height:350px}.quote-grid{grid-template-columns:repeat(2,1fr)}.stories{grid-template-columns:1fr}.values{grid-template-columns:1fr}}
+    @media(max-width:520px){.nav{padding:10px 13px}.brand{font-size:1rem}.navright .btn{padding:9px 12px;font-size:.83rem}.lang{max-width:94px;padding:7px 6px;font-size:.85rem}.hero-inner{padding:40px 18px 52px}.hero-art{min-height:300px}.mirror{width:64%;border-width:7px}.person{width:66px;height:66px;font-size:1.8rem;border-width:3px}.p1{left:8%}.p2{right:5%}.p3{left:0}.p4{right:6%}.quote-grid{gap:10px}.quote{padding:15px;min-height:170px}.quote p{font-size:.96rem}.story{grid-template-columns:105px 1fr;gap:12px;padding:10px}.story img{height:165px}.story p{font-size:.88rem}section{padding:54px 16px}.section-head{margin-bottom:25px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <nav class="nav" aria-label="Navigation principale">
+    <a class="brand" href="#accueil">Ta beauté, <span>c’est toi ♡</span></a>
+    <div class="navlinks">
+      <a href="#accueil" data-i18n="navHome">Accueil</a><a href="#mots" data-i18n="navWords">Mots doux</a><a href="#autres" data-i18n="navMore">Autres petits mots doux</a><a href="#communaute" data-i18n="navCommunity">Notre communauté</a><a href="#apropos" data-i18n="navAbout">À propos</a>
+    </div>
+    <div class="navright">
+      <select class="lang" id="language" aria-label="Choisir la langue">
+        <option value="fr">🌐 Français</option><option value="en">🌐 English</option><option value="es">🌐 Español</option><option value="ln">🌐 Lingála</option>
+      </select>
+      <a class="btn" href="#communaute" data-i18n="join">Nous rejoindre</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow" data-i18n="eyebrow">Un espace de douceur et d’inclusion</span>
+      <h1 data-i18n="heroTitle">Ta beauté,<br>c’est toi.</h1>
+      <p class="slogan" data-i18n="slogan">Tu es ce magnifique reflet dans un miroir. Que personne ne le change, garde cette pensée.</p>
+      <p data-i18n="heroText">Ici, chaque histoire mérite le respect. Un espace pour se soutenir, partager des mots doux et se rappeler que notre valeur ne se résume pas à notre apparence ni à un handicap.</p>
+      <div class="hero-actions"><a class="btn" href="#mots" data-i18n="readWords">Découvrir les mots doux</a><a class="btn secondary" href="#communaute" data-i18n="meetUs">Rencontrer la communauté</a></div>
+    </div>
+    <div class="hero-art" role="img" aria-label="Miroir entouré de personnes différentes, symbole d’inclusion">
+      <div class="halo"></div><div class="mirror"><div class="mirror-heart">♡</div><div class="mirror-label" data-i18n="mirrorLabel">tu as ta place ici</div></div>
+      <div class="person p1" aria-label="Personne avec hijab">🧕🏽</div><div class="person p2" aria-label="Personne avec vitiligo">🧑🏾‍🦱</div><div class="person p3" aria-label="Personne en fauteuil roulant">♿</div><div class="person p4" aria-label="Personne avec appareil auditif">🦻🏽</div><div class="person p5" aria-label="Personne avec canne">🦯</div><div class="person p6" aria-label="Personne avec acné">😊</div>
+    </div>
+  </div>
+</section>
+
+<section id="mots">
+  <div class="container">
+    <div class="section-head"><span class="kicker" data-i18n="wordsKicker">À garder près du cœur</span><p data-i18n="wordsIntro">Quelques phrases pour les jours où tu as besoin de te rappeler que tu comptes.</p></div>
+    <div class="quote-grid" id="quoteGrid">
+      <article class="quote"><span class="num">01</span><p>Tu as le droit d’exister sans t’excuser d’être toi.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">02</span><p>Ta valeur ne dépend pas du regard des autres.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">03</span><p>Tu mérites la douceur, même les jours difficiles.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">04</span><p>Tu n’as pas besoin d’être parfait·e pour être aimé·e.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">05</span><p>Ta peau raconte une histoire qui mérite le respect.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">06</span><p>Tes différences ne diminuent jamais ta valeur.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">07</span><p>Tu as le droit de prendre ta place.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">08</span><p>Tu n’es pas obligé·e de te comparer aux autres.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">09</span><p>Ton corps mérite le respect et la bienveillance.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">10</span><p>Tu mérites d’être écouté·e et compris·e.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">11</span><p>Tu peux avancer à ton propre rythme.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">12</span><p>Les marques sur ta peau ne définissent pas qui tu es.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">13</span><p>Tu mérites des amitiés où tu te sens en sécurité.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">14</span><p>Tes idées et tes rêves ont de l’importance.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">15</span><p>Tu n’as pas à ressembler aux autres pour avoir ta place.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">16</span><p>Tu peux apprendre à te parler avec plus de douceur.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">17</span><p>Ton handicap ne définit pas toute ton histoire. Ta valeur et tes rêves t’appartiennent.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">18</span><p>Tu peux être fier·ère des petits pas que tu fais.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">19</span><p>Tu mérites qu’on écoute tes besoins sans te faire honte.</p><span class="spark">♡</span></article>
+      <article class="quote"><span class="num">20</span><p>Tu es ce magnifique reflet dans un miroir. Que personne ne le change, garde cette pensée.</p><span class="spark">♡</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="more-section" id="autres">
+  <div class="container">
+    <div class="section-head"><span class="kicker" data-i18n="moreKicker">Encore un peu de douceur</span><h2 data-i18n="moreTitle">Autres petits mots doux</h2><p data-i18n="moreIntro">Des pensées pour accompagner les parcours, les émotions et les histoires de chacun.</p></div>
+    <div class="stories">
+      <article class="story"><img loading="lazy" alt="Portrait d’une femme avec des marques d’acné visibles, peau naturelle" src="https://p3.hippopx.com/preview/139/678/woman-side-profile-close-up-photo-natural-skin-acne-side-view-facial-features-curly-hair-skin-texture-portrait-photography-neutral-background.jpg"><div><h3 data-i18n="story1Title">Tu n’as rien à prouver</h3><p data-i18n="story1Text">Tu mérites le respect sans devoir changer ton visage, cacher tes différences ou répondre aux attentes des autres.</p></div></article>
+      <article class="story"><img loading="lazy" alt="Personne en fauteuil roulant avec une accompagnante dans un parc" src="https://images.unsplash.com/photo-1790800276577-cd5ebee4fe3c?auto=format&fit=crop&w=700&q=80"><div><h3 data-i18n="story2Title">Ton histoire t’appartient</h3><p data-i18n="story2Text">Le handicap ne résume pas toute ta personne. Tes envies, tes idées, tes liens et tes rêves comptent aussi.</p></div></article>
+      <article class="story"><img loading="lazy" alt="Portrait d’une femme avec du vitiligo visible sur le visage et la main" src="https://images.unsplash.com/photo-1760087260577-f5d2aec2e669?auto=format&fit=crop&w=700&q=80"><div><h3 data-i18n="story3Title">Tu peux avancer à ton rythme</h3><p data-i18n="story3Text">Tu n’as pas besoin d’aller aussi vite que les autres. Prends le temps qu’il te faut et demande du soutien quand tu en as envie.</p></div></article>
+      <article class="story"><img loading="lazy" alt="Portrait d’une femme montrant ses cicatrices avec confiance" src="https://p3.hippopx.com/preview/610/661/woman-with-burn-scars-burn-scars-body-positivity-close-up-portrait-confident-woman-embracing-scars-skin-resilience-scar-visibility-female-empowerment-burn-survivor.jpg"><div><h3 data-i18n="story4Title">Tu as ta place</h3><p data-i18n="story4Text">Tu mérites des espaces où l’on t’écoute, où tes limites sont respectées et où tu peux être toi-même.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="communaute">
+  <div class="community-card">
+    <div class="bigheart">💗</div><span class="kicker" data-i18n="communityKicker">Ensemble, avec bienveillance</span>
+    <h2 data-i18n="communityTitle">Notre communauté</h2>
+    <p data-i18n="communityText">Rejoins notre groupe WhatsApp pour partager des encouragements et échanger dans le respect. Tu peux lire les règles du groupe et choisir ce que tu souhaites partager.</p>
+    <a class="btn" href="https://chat.whatsapp.com/LNWgqtRlB9lDLl8jxDHhCX?mode=gi_t" target="_blank" rel="noopener noreferrer" data-i18n="whatsapp">Rejoindre le groupe WhatsApp ↗</a>
+    <p class="tiny" style="margin-top:16px" data-i18n="privacy">Rappel : dans un groupe WhatsApp classique, les autres membres peuvent voir ton numéro. Ne partage que ce avec quoi tu es à l’aise.</p>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="container">
+    <div class="section-head"><span class="kicker" data-i18n="aboutKicker">Pourquoi ce projet existe</span><h2 data-i18n="aboutTitle">Un endroit où chacun compte</h2><p data-i18n="aboutIntro">Ta beauté, c’est toi veut encourager le respect de soi, l’écoute et l’inclusion, sans comparer les personnes ni leur imposer une seule façon d’être.</p></div>
+    <div class="values">
+      <article class="value"><div class="ico">🌷</div><h3 data-i18n="value1Title">Bienveillance</h3><p data-i18n="value1Text">Des mots qui soutiennent au lieu de juger.</p></article>
+      <article class="value"><div class="ico">♿</div><h3 data-i18n="value2Title">Inclusion</h3><p data-i18n="value2Text">Des expériences différentes ont toutes leur place.</p></article>
+      <article class="value"><div class="ico">🤝</div><h3 data-i18n="value3Title">Respect</h3><p data-i18n="value3Text">Écouter, respecter les limites et protéger la vie privée.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-inner"><div><a class="brand" href="#accueil">Ta beauté, <span>c’est toi ♡</span></a><p data-i18n="footerLine">Un peu de douceur peut faire une différence.</p></div><div><a href="#accueil" data-i18n="backTop">Retour en haut ↑</a><p>© <span id="year"></span> Ta beauté, c’est toi</p></div></div>
+</footer>
+<div class="notice" data-i18n="imageNote">Les photos peuvent dépendre d’un service externe et nécessitent une connexion Internet.</div>
+
+<script>
+const whatsapp = "https://chat.whatsapp.com/LNWgqtRlB9lDLl8jxDHhCX?mode=gi_t";
+const quotes = [
+ {fr:"Tu as le droit d’exister sans t’excuser d’être toi.",en:"You have the right to exist without apologizing for being yourself.",es:"Tienes derecho a existir sin disculparte por ser quien eres.",ln:"Ozali na lotomo ya kozala yo moko, kozanga kosenga bolimbisi."},
+ {fr:"Ta valeur ne dépend pas du regard des autres.",en:"Your worth does not depend on other people’s opinions.",es:"Tu valor no depende de la mirada de los demás.",ln:"Motuya na yo etalelaka te ndenge bato mosusu batalelaka yo."},
+ {fr:"Tu mérites la douceur, même les jours difficiles.",en:"You deserve kindness, even on difficult days.",es:"Mereces ternura, incluso en los días difíciles.",ln:"Obongi na boboto, ata na mikolo ya mpasi."},
+ {fr:"Tu n’as pas besoin d’être parfait·e pour être aimé·e et respecté·e.",en:"You don’t have to be perfect to be loved and respected.",es:"No tienes que ser perfecto para recibir amor y respeto.",ln:"Esengeli te ozala moto ya kokoka na nyonso mpo bálinga mpe bápesa yo limemya."},
+ {fr:"Tes différences font partie de ton histoire, pas de toute ton identité.",en:"Your differences are part of your story, not your whole identity.",es:"Tus diferencias son parte de tu historia, no toda tu identidad.",ln:"Bokeseni na yo ezali eteni ya lisolo na yo, kasi ezali yo mobimba te."},
+ {fr:"Tu peux demander de l’aide. Tu n’as pas à tout porter seul·e.",en:"You can ask for help. You don’t have to carry everything alone.",es:"Puedes pedir ayuda. No tienes que llevarlo todo a solas.",ln:"Okoki kosenga lisalisi. Esengeli te omema makambo nyonso yo moko."},
+ {fr:"Ton corps mérite du respect, pas des commentaires blessants.",en:"Your body deserves respect, not hurtful comments.",es:"Tu cuerpo merece respeto, no comentarios hirientes.",ln:"Nzoto na yo ebongi na limemya, kasi te na maloba oyo epesaka mpasi."},
+ {fr:"Tu peux avancer à ton propre rythme.",en:"You can move forward at your own pace.",es:"Puedes avanzar a tu propio ritmo.",ln:"Okoki kokende liboso na mbangu oyo ebongi na yo."},
+ {fr:"Tu n’es pas obligé·e de raconter ton histoire à tout le monde.",en:"You don’t have to tell your story to everyone.",es:"No tienes que contar tu historia a todo el mundo.",ln:"Esengeli te oyebisa moto nyonso lisolo na yo."},
+ {fr:"Le respect n’est pas une récompense : tu le mérites déjà.",en:"Respect is not a reward; you already deserve it.",es:"El respeto no es un premio: ya lo mereces.",ln:"Limemya ezali mbano te; obongi na yango."},
+ {fr:"Tu peux poser des limites et dire non.",en:"You can set boundaries and say no.",es:"Puedes poner límites y decir que no.",ln:"Okoki kotya bandelo mpe koloba te."},
+ {fr:"Un jour difficile ne résume pas toute ta vie.",en:"One difficult day does not define your whole life.",es:"Un día difícil no define toda tu vida.",ln:"Mokolo moko ya mpasi elimboli bomoi na yo mobimba te."},
+ {fr:"Tu mérites des amitiés où tu te sens en sécurité.",en:"You deserve friendships where you feel safe.",es:"Mereces amistades en las que te sientas a salvo.",ln:"Obongi na boninga epai omiyokaka na kimya."},
+ {fr:"Tes idées et tes rêves ont de l’importance.",en:"Your ideas and dreams matter.",es:"Tus ideas y tus sueños importan.",ln:"Makanisi mpe bandoto na yo ezali na ntina."},
+ {fr:"Tu n’as pas à ressembler aux autres pour avoir ta place.",en:"You don’t have to look like others to belong.",es:"No tienes que parecerte a los demás para tener tu lugar.",ln:"Esengeli te omonana lokola bato mosusu mpo ozala na esika na yo."},
+ {fr:"Tu peux apprendre à te parler avec plus de douceur.",en:"You can learn to speak to yourself more kindly.",es:"Puedes aprender a hablarte con más cariño.",ln:"Okoki koyekola koloba na motema na yo na boboto mingi."},
+ {fr:"Ton handicap ne définit pas toute ton histoire. Ta valeur et tes rêves t’appartiennent.",en:"Your disability does not define your whole story. Your worth and dreams are yours.",es:"Tu discapacidad no define toda tu historia. Tu valor y tus sueños te pertenecen.",ln:"Bomoi na yo elimbolami kaka na bozangi makoki te. Motuya mpe bandoto na yo ezali ya yo."},
+ {fr:"Tu peux être fier·ère des petits pas que tu fais.",en:"You can be proud of the small steps you take.",es:"Puedes sentir orgullo por los pequeños pasos que das.",ln:"Okoki komikumisa mpo na matambe mike oyo ozali kosala."},
+ {fr:"Tu mérites qu’on écoute tes besoins sans te faire honte.",en:"You deserve to have your needs heard without being shamed.",es:"Mereces que escuchen tus necesidades sin avergonzarte.",ln:"Obongi báyoka bamposa na yo kozanga koyokisa yo nsɔni."},
+ {fr:"Tu es ce magnifique reflet dans un miroir. Que personne ne le change, garde cette pensée.",en:"You are that beautiful reflection in a mirror. Let no one change it; keep this thought.",es:"Eres ese hermoso reflejo en un espejo. Que nadie lo cambie; conserva este pensamiento.",ln:"Ozali elilingi kitoko wana na kati ya talatala. Tika moto moko te abongola yango; batela likanisi oyo."}
+];
+const dict = {
+ fr:{navHome:"Accueil",navWords:"Mots doux",navMore:"Autres petits mots doux",navCommunity:"Notre communauté",navAbout:"À propos",join:"Nous rejoindre",eyebrow:"Un espace de douceur et d’inclusion",heroTitle:"Ta beauté,<br>c’est toi.",mirrorLabel:"Tu as ta place ici",slogan:"Tu es ce magnifique reflet dans un miroir. Que personne ne le change, garde cette pensée.",heroText:"Ici, chaque histoire mérite le respect. Un espace pour se soutenir, partager des mots doux et se rappeler que notre valeur ne se résume pas à notre apparence ni à un handicap.",readWords:"Découvrir les mots doux",meetUs:"Rencontrer la communauté",wordsKicker:"À garder près du cœur",wordsTitle:"Les 20 mots doux",wordsIntro:"Quelques phrases pour les jours où tu as besoin de te rappeler que tu comptes.",moreKicker:"Encore un peu de douceur",moreTitle:"Autres petits mots doux",moreIntro:"Des pensées pour accompagner les parcours, les émotions et les histoires de chacun.",story1Title:"Tu n’as rien à prouver",story1Text:"Tu mérites le respect sans devoir changer ton visage, cacher tes différences ou répondre aux attentes des autres.",story2Title:"Ton histoire t’appartient",story2Text:"Le handicap ne résume pas toute ta personne. Tes envies, tes idées, tes liens et tes rêves comptent aussi.",story3Title:"Tu peux avancer à ton rythme",story3Text:"Tu n’as pas besoin d’aller aussi vite que les autres. Prends le temps qu’il te faut et demande du soutien quand tu en as envie.",story4Title:"Tu as ta place",story4Text:"Tu mérites des espaces où l’on t’écoute, où tes limites sont respectées et où tu peux être toi-même.",communityKicker:"Ensemble, avec bienveillance",communityTitle:"Notre communauté",communityText:"Rejoins notre groupe WhatsApp pour partager des encouragements et échanger dans le respect. Tu peux lire les règles du groupe et choisir ce que tu souhaites partager.",whatsapp:"Rejoindre le groupe WhatsApp ↗",privacy:"Rappel : dans un groupe WhatsApp classique, les autres membres peuvent voir ton numéro. Ne partage que ce avec quoi tu es à l’aise.",aboutKicker:"Pourquoi ce projet existe",aboutTitle:"Un endroit où chacun compte",aboutIntro:"Ta beauté, c’est toi veut encourager le respect de soi, l’écoute et l’inclusion, sans comparer les personnes ni leur imposer une seule façon d’être.",value1Title:"Bienveillance",value1Text:"Des mots qui soutiennent au lieu de juger.",value2Title:"Inclusion",value2Text:"Des expériences différentes ont toutes leur place.",value3Title:"Respect",value3Text:"Écouter, respecter les limites et protéger la vie privée.",footerLine:"Un peu de douceur peut faire une différence.",backTop:"Retour en haut ↑",imageNote:"Les photos peuvent dépendre d’un service externe et nécessitent une connexion Internet."},
+ en:{navHome:"Home",navWords:"Kind words",navMore:"More kind words",navCommunity:"Our community",navAbout:"About",join:"Join us",eyebrow:"A space for kindness and inclusion",heroTitle:"Your beauty,<br>is you.",mirrorLabel:"You belong here",slogan:"You are that beautiful reflection in a mirror. Let no one change it, keep this thought.",heroText:"Every story deserves respect. This is a space to support one another, share kind words, and remember that our worth is more than appearance or disability.",readWords:"Discover kind words",meetUs:"Meet the community",wordsKicker:"Keep close to your heart",wordsTitle:"20 kind words",wordsIntro:"A few reminders for days when you need to remember that you matter.",moreKicker:"A little more kindness",moreTitle:"More kind words",moreIntro:"Thoughts to accompany everyone’s journeys, feelings, and stories.",story1Title:"You have nothing to prove",story1Text:"You deserve respect without changing your face, hiding your differences, or meeting other people’s expectations.",story2Title:"Your story belongs to you",story2Text:"Disability does not sum up who you are. Your interests, ideas, relationships, and dreams matter too.",story3Title:"You can move at your own pace",story3Text:"You don’t have to move as fast as others. Take the time you need and ask for support when you want it.",story4Title:"You belong here",story4Text:"You deserve spaces where people listen, respect your boundaries, and let you be yourself.",communityKicker:"Together, with kindness",communityTitle:"Our community",communityText:"Join our WhatsApp group to share encouragement and connect respectfully. Read the group rules and share only what you feel comfortable sharing.",whatsapp:"Join the WhatsApp group ↗",privacy:"Reminder: in a regular WhatsApp group, other members may see your phone number. Share only what you feel comfortable sharing.",aboutKicker:"Why this project exists",aboutTitle:"A place where everyone matters",aboutIntro:"Your beauty is you encourages self-respect, listening, and inclusion without comparing people or forcing one way of being.",value1Title:"Kindness",value1Text:"Words that support rather than judge.",value2Title:"Inclusion",value2Text:"Different experiences all have a place.",value3Title:"Respect",value3Text:"Listen, respect boundaries, and protect privacy.",footerLine:"A little kindness can make a difference.",backTop:"Back to top ↑",imageNote:"Photos may be hosted by an external service and require an internet connection."},
+ es:{navHome:"Inicio",navWords:"Palabras bonitas",navMore:"Más palabras bonitas",navCommunity:"Nuestra comunidad",navAbout:"Acerca de",join:"Únete",eyebrow:"Un espacio de ternura e inclusión",heroTitle:"Tu belleza,<br>eres tú.",mirrorLabel:"Tienes tu lugar aquí",slogan:"Eres ese hermoso reflejo en un espejo. Que nadie lo cambie, conserva este pensamiento.",heroText:"Cada historia merece respeto. Este es un espacio para apoyarnos, compartir palabras amables y recordar que nuestro valor es más que la apariencia o la discapacidad.",readWords:"Descubrir palabras bonitas",meetUs:"Conocer la comunidad",wordsKicker:"Guárdalas cerca del corazón",wordsTitle:"20 palabras bonitas",wordsIntro:"Algunas frases para los días en que necesitas recordar que importas.",moreKicker:"Un poco más de ternura",moreTitle:"Más palabras bonitas",moreIntro:"Pensamientos para acompañar los caminos, emociones e historias de cada persona.",story1Title:"No tienes nada que demostrar",story1Text:"Mereces respeto sin cambiar tu rostro, ocultar tus diferencias ni cumplir las expectativas de los demás.",story2Title:"Tu historia te pertenece",story2Text:"La discapacidad no resume quién eres. Tus intereses, ideas, relaciones y sueños también importan.",story3Title:"Puedes avanzar a tu ritmo",story3Text:"No tienes que ir tan rápido como los demás. Tómate el tiempo que necesites y pide apoyo cuando quieras.",story4Title:"Tienes tu lugar",story4Text:"Mereces espacios donde te escuchen, respeten tus límites y puedas ser tú mismo.",communityKicker:"Juntos, con amabilidad",communityTitle:"Nuestra comunidad",communityText:"Únete a nuestro grupo de WhatsApp para compartir ánimo y conversar con respeto. Lee las reglas y comparte solo lo que te haga sentir cómodo.",whatsapp:"Unirse al grupo de WhatsApp ↗",privacy:"Aviso: en un grupo normal de WhatsApp, otros miembros pueden ver tu número. Comparte solo lo que te resulte cómodo.",aboutKicker:"Por qué existe este proyecto",aboutTitle:"Un lugar donde todos importan",aboutIntro:"Tu belleza eres tú promueve el respeto propio, la escucha y la inclusión, sin comparar a las personas ni imponer una sola forma de ser.",value1Title:"Amabilidad",value1Text:"Palabras que apoyan en lugar de juzgar.",value2Title:"Inclusión",value2Text:"Todas las experiencias diferentes tienen un lugar.",value3Title:"Respeto",value3Text:"Escuchar, respetar los límites y proteger la privacidad.",footerLine:"Un poco de ternura puede marcar la diferencia.",backTop:"Volver arriba ↑",imageNote:"Las fotos pueden depender de un servicio externo y necesitan conexión a Internet."},
+ ln:{navHome:"Ndako",navWords:"Maloba 20 ya boboto",navMore:"Maloba mosusu ya boboto",navCommunity:"Lisanga na biso",navAbout:"Na ntina na biso",join:"Yaka na biso",eyebrow:"Esika ya boboto mpe ya kondima bato nyonso",heroTitle:"Kitoko na yo,<br>ezali yo.",mirrorLabel:"Ozali na esika na yo awa",slogan:"Ozali elilingi kitoko wana na kati ya talatala. Tika moto moko te abongola yango, batela likanisi oyo.",heroText:"Lisolo nyonso ebongi na limemya. Awa tokoki kosalisana, kokabola maloba ya boboto mpe komikundola ete motuya na biso eleki ndenge tomonanaka to bozangi makoki.",readWords:"Tanga maloba ya boboto",meetUs:"Yeba lisanga na biso",wordsKicker:"Batela yango na motema",wordsTitle:"Maloba 20 ya boboto",wordsIntro:"Maloba mpo na mikolo oyo osengeli komikundola ete ozali na ntina.",moreKicker:"Boboto mosusu",moreTitle:"Maloba mosusu ya boboto",moreIntro:"Makanisi mpo na kosunga mibembo, mayoki mpe masolo ya moto nyonso.",story1Title:"Osengeli komonisa eloko te",story1Text:"Obongi na limemya kozanga kobongola elongi na yo, kobomba bokeseni na yo to kokokisa makambo oyo bato mosusu balingi.",story2Title:"Lisolo na yo ezali ya yo",story2Text:"Bozangi makoki elimboli yo mobimba te. Makambo oyo olingaka, makanisi, boninga mpe bandoto na yo ezali na ntina mpe.",story3Title:"Kende na mbangu na yo",story3Text:"Esengeli te okende mbangu lokola bato mosusu. Zwa ntango oyo osengeli na yango mpe sɛngá lisalisi soki olingi.",story4Title:"Ozali na esika na yo",story4Text:"Obongi na bisika oyo bato bayokaka yo, bapesaka limemya na bandelo na yo mpe batikaka yo ozala yo moko.",communityKicker:"Elongo, na boboto",communityTitle:"Lisanga na biso",communityText:"Kota na lisanga na biso ya WhatsApp mpo na kokabola maloba ya kolendisa mpe kosolola na limemya. Tanga mibeko ya lisanga mpe kabola kaka makambo oyo omiyoki malamu na yango.",whatsapp:"Kota na lisanga ya WhatsApp ↗",privacy:"Likundoli: na lisanga ya WhatsApp ya momeseno, bato mosusu bakoki komona nimero na yo. Kabola kaka makambo oyo omiyoki malamu na yango.",aboutKicker:"Mpo na nini tosalaki mosala oyo",aboutTitle:"Esika oyo moto nyonso azali na ntina",aboutIntro:"Kitoko na yo, ezali yo elendisi komipesa limemya, koyoka basusu mpe kondima bato nyonso, kozanga kokokanisa bato to kotinda bango báyeba kozala lolenge moko.",value1Title:"Boboto",value1Text:"Maloba oyo esungaka na esika ya kosambisa.",value2Title:"Kondima bato nyonso",value2Text:"Masolo mpe bomoi ya ndenge na ndenge ezali na esika na yango.",value3Title:"Limemya",value3Text:"Yoka basusu, limemya bandelo mpe batela bomoto ya moto.",footerLine:"Boboto moke ekoki kobongola makambo.",backTop:"Zonga likoló ↑",imageNote:"Bafɔtɔ ekoki kouta na site mosusu mpe esengaka Internet."}
+};
+function renderQuotes(lang){const grid=document.getElementById("quoteGrid");grid.innerHTML="";quotes.forEach((q,i)=>{const card=document.createElement("article");card.className="quote";const n=document.createElement("span");n.className="num";n.textContent=String(i+1).padStart(2,"0");const p=document.createElement("p");p.textContent=q[lang]||q.fr;const s=document.createElement("span");s.className="spark";s.textContent="♡";card.append(n,p,s);grid.append(card);});}
+function setLanguage(lang){if(!dict[lang])lang="fr";document.documentElement.lang=lang;document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(dict[lang][key])el.innerHTML=dict[lang][key];});document.getElementById("language").value=lang;renderQuotes(lang);try{localStorage.setItem("tbct-lang",lang)}catch(e){}}
+const select=document.getElementById("language");let chosen=null;try{chosen=localStorage.getItem("tbct-lang")}catch(e){}if(!chosen){const browser=(navigator.language||"fr").toLowerCase();chosen=browser.startsWith("en")?"en":browser.startsWith("es")?"es":browser.startsWith("ln")?"ln":"fr";}setLanguage(chosen);select.addEventListener("change",e=>setLanguage(e.target.value));document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
